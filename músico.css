@@ -1,0 +1,500 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+body{
+    background: linear-gradient( to top, rgb(33, 37, 41), rgb(52, 58, 64));
+    font-family: 'Roboto Condensed', sans-serif;
+    
+}
+
+a{
+    color: black;
+}
+
+
+  /*___________navbar_____________________*/
+  .navegacao{
+     background: rgba(211, 211, 211, 0.52);
+     backdrop-filter: blur(8px);
+     position: fixed;
+     z-index: 6;
+     width: 100%; 
+  }
+  
+  .box-nav{
+      display: flex;
+      justify-content: space-between;
+      width: 100vw;
+      height: 60px;
+      align-items: center;
+      color: rgb(233, 236, 239);
+  }
+  
+  .icon-menu{
+      font-size: 38px;
+      position: relative;
+      left: -15px;
+      z-index: 2;
+  }
+  
+  .h1nav{
+     position:relative;
+     right: -15px;
+     align-items: center;
+  }
+  
+  .box-mn{
+    display: none;
+    background: red;
+    justify-content: center;
+    align-items: center ;
+    height: 45vh;
+    text-align: center;
+    font-weight: 400;
+    background: rgba(211, 211, 211, 0.52);
+    backdrop-filter: blur(8px);
+    overflow: hidden;
+  }
+  .CliM{
+    list-style: none;
+    padding: 20px;
+    width: 65vw;
+  }
+  
+  .CliM:hover{
+    background: rgb(222, 226, 230);
+    border-radius: 3px;
+  }
+
+
+ .IconMen{
+     /*display: none;*/
+ }
+ 
+ .IconMenurAdd{
+     display: grid;
+ }
+
+
+ .adicionada{
+      display: flex;
+      animation: subir 1s ease;
+  }
+ 
+  .removida{
+    animation: removida 1.5s ease;
+    height: 0vh;
+  }
+
+
+ .removidaUl{
+     /*display: none;*/
+ } 
+  
+  
+  @keyframes removida{
+      from{
+         height: 45vh; 
+      }
+      to{
+         height: 0vh; 
+      }
+  }
+  
+  @keyframes subir {
+      from {
+        height: 0vh;
+      }
+      to {
+        height: 45vh;
+      }
+    }
+ 
+
+  /*_____________foto_________________*/
+ 
+  .box-principal2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15px;
+    padding: 11px;
+    height: 85vh;
+  }
+
+.fotoRC{
+    position: relative;
+    top: -10px;
+    width: 250px;  
+    height: 250px;
+    border-radius: 50%;
+    border: 1px solid rgba(211, 211, 211, 0.52);
+    box-shadow: 0px 2px 5px 4px rgba(211, 211, 211, 0.52);
+    animation: flutuando 2.5s infinite ease-in-out;
+    margin-top: -15px;
+  }
+  
+  @keyframes flutuando {
+   0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+  }
+  
+    /*______________descrisao____________*/
+    
+    .box-descri{
+        height: 165px;
+        background: rgba(211, 211, 211, 0.52);
+        backdrop-filter: blur(8px);
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-left: 11px solid rgb(206, 212, 218);
+        margin-top: 10px;
+        padding: 3px;
+        animation: flutuando 2.5s infinite ease-in-out;
+    }
+    .paragraC{
+        text-align: center ;
+    }
+    
+    .paragrafoDoDes{
+       position: relative;
+       top: -4px;
+    }
+    
+    
+    .iconeDes{
+        width: 35px;
+        font-size: 20px;
+        color: rgb(206, 212, 218);
+    }
+    .caixaDeIcones{
+        margin-top: 8px;
+    }
+   
+   .confiraAbaixo{
+       margin-top: 18px;
+       display:flex;
+       justify-content: center ;
+       align-items: center ;
+       flex-direction: column;
+   }
+   
+   .btnP{
+       padding: 10px;
+       background: rgb(222, 226, 230);;
+       color: black;
+       border-radius: 11px;
+       margin-top: 8px;
+       width: 97px;
+       text-align: center;
+       font-weight: 400;
+       border: 1px solid rgba(211, 211, 211, 0.52);
+       box-shadow: 0px 0px 5px 2px rgba(211, 211, 211, 0.52);
+   }
+    
+    
+ /*____________cardmisicas__________________________*/
+ 
+ .box-da-musicas{
+     padding: 8px;
+     margin-top: 15px;
+     height: 90vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     border-bottom: 25px;
+     gap: 20px;
+ }
+ .box-musik{
+     background: rgb(108, 117, 125);
+     display: flex;
+     align-items: center;
+     width: 90%;
+     height: 125px;
+     margin-bottom: -12px;
+     border-radius: 7px;
+     position: relative;
+     padding: 16px;
+     border: 1px solid rgb(108, 117, 125);
+     box-shadow: 0px 1px 4px 1px rgb(222, 226, 230);
+ }
+ 
+ .h1doCard{
+     position: relative;
+     top: -55px;
+     color: rgb(233, 236, 239);
+ }
+ 
+ audio{
+     position: relative;
+     left: 10px;
+ }
+ 
+ .boxH1{
+     text-align: center;
+     margin-top: -20px;
+ }
+ .boxMks5{
+     margin-top: 20px;
+ }
+ 
+ 
+.imgCrd{
+    width: 100px;
+    border-radius: 3px;
+    left: 20px; 
+    
+}
+
+.cardCapa{
+    width: 120px;
+    height: 80px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 6px;
+    background: rgb(108, 117, 125);
+}
+
+  /*__________js________________________*/
+  
+    
+ .DescriCantor{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: 9px;
+    transform: translate(-50%,-50%);
+    border-radius: 0px 0px 4px 4px;
+    z-index: 4;
+    width: 85%;
+    height: 78vh;
+    padding: 15px;
+    background: rgba(211, 211, 211, 0.52);
+    backdrop-filter: blur(20px);
+    border-radius: 6px;
+    overflow: hidden;
+    border-top: 9px solid  rgb(206, 212, 218);
+   } 
+  
+.fechouCantou{
+    display: inline;
+    animation: crescer 1.5s ease-in;
+  }
+  
+  @keyframes crescer{
+      from{height: 0vh}
+      do{height: 78vh}
+  }
+  @keyframes deminuir{
+      from{height: 78vh }
+      do{height:0vh }
+  }
+  
+   /*______________________________________________________*/   
+    
+
+    .descrisaoParagro1{
+     
+        margin-top: 35px;
+    }
+    .D4{
+        margin-top: 15px;
+    }
+    .h3daDescricao{
+        text-align: center;
+    }
+    .botaoFecharDes{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 18px; 
+    }
+    .botaoInput{
+    padding: 9px;
+    border-radius: 7px;
+    outline: none;
+    border: none;
+    }
+    
+    
+    .butonF{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 11px;  
+    }
+    .buton{
+    padding: 9px;
+    border-radius: 7px;
+    outline: none;
+    border: none; 
+    margin-top: -15px;
+    }
+  /*_______________________________________________________*/
+
+
+.DescricaoMusic{
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 0px 0px 4px 4px;
+        z-index: 4;
+        width: 85%;
+        height: 390px;
+        padding: 15px;
+        background: rgba(211, 211, 211, 0.52);
+        backdrop-filter: blur(20px);
+        border-radius: 6px;
+        overflow: hidden;
+    }
+ 
+ .addMusick1{
+     display: inline;
+     animation: crescer 1.5s ease-in;
+ }
+
+     
+.DescricaoMusic2{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 0px 0px 4px 4px;
+    z-index: 4;
+    width: 85%;
+    height: 390px;
+    padding: 15px;
+    background: rgba(211, 211, 211, 0.52);
+    backdrop-filter: blur(20px);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.addMusick2{
+    display: inline;
+    animation: crescer 1.5s ease-in;
+}
+
+.DescricaoMusic3{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 0px 0px 4px 4px;
+    z-index: 4;
+    width: 85%;
+    height: 390px;
+    padding: 15px;
+    background: rgba(211, 211, 211, 0.52);
+    backdrop-filter: blur(20px);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.addMusick3{
+  display: inline;
+  animation: crescer 1.5s ease-in;  
+}
+
+.DescricaoMusic4{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 0px 0px 4px 4px;
+    z-index: 4;
+    width: 85%;
+    height: 390px;
+    padding: 15px;
+    background: rgba(211, 211, 211, 0.52);
+    backdrop-filter: blur(20px);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.addMusick4{
+  display: inline;
+  animation: crescer 1.5s ease-in;   
+}
+
+.DescricaoMusic5{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 0px 0px 4px 4px;
+    z-index: 4;
+    width: 85%;
+    height: 390px;
+    padding: 15px;
+    background: rgba(211, 211, 211, 0.52);
+    backdrop-filter: blur(20px);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.addMusick5{
+   display: inline;
+  animation: crescer 1.5s ease-in;  
+}
+.paragrafoSaberMasi{
+        padding: 4px;
+        width: 18vw;
+        text-align: center;
+        margin-right: 310px;
+        margin-top: -25px;
+        border-radius: 0px 0px 10px 10px;
+        background: rgb(108, 117, 125);
+        z-index: 2;
+        box-shadow: 0px 2px 0px rgb(222, 226, 230);
+        color: white;
+        font-weight: 400;
+    }
+ .feito{
+    display: grid;
+ }
+    
+.box-final{
+  height: 18vh;
+  margin-top: 55px;;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(211, 211, 211, 0.52);
+  backdrop-filter: blur(20px);
+}
+
+.boxFinal3{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+}
+
+.iconfooter{
+    font-size: 25px;
+}
